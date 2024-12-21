@@ -6,17 +6,16 @@
 /* Additional styling for comments container */
 .custom-section {
     z-index: 10;
-    width: 100vh;
-    height: 20vw;
+    width: 100vh !important;
+    height: 20vw ;
     margin: 20px;
     /* background-color: aqua; */
-    margin-top: 0px;
-    margin-bottom: 0px;
+    
 }
 
-/* Form styling inside the custom section */
 .custom-section form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 20px 0;
 }
@@ -34,7 +33,7 @@
 }
 
 .custom-section button {
-    z-index: 50;
+    
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 10px;
@@ -52,7 +51,6 @@
     transform: translateY(-2px);
 }
 
-/* example styles in style.css */
 #errorContainer {
     color: red;
     display: none;
@@ -95,12 +93,12 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/*Extra Large screens - Extra large desktops*/
 .header {
 
     position: relative;
 }
 
+/*Extra Large screens - Extra large desktops*/
 .heeder-large-screen {
     display: flex !important;
     justify-content: space-evenly !important;
@@ -203,7 +201,7 @@ h3 {
 
     flex-wrap: wrap;
     align-items: center;
-    background-color:	rgba(0, 0, 47,0.3);
+    background-color: rgba(0, 0, 47, 0.3);
     justify-content: space-evenly;
 }
 
@@ -285,7 +283,7 @@ h4 {
 
     list-style-type: none;
     width: 100%;
-    font-style:italic;
+    font-style: italic;
     object-fit: contain;
     padding: 10px;
     display: flex;
@@ -501,13 +499,12 @@ html {
 
     .hero-title {
         font-size: 30px;
-        ;
+
         padding-top: 70px;
     }
 
     .hero-text p {
         width: 100%;
-        ;
         font-size: 13px;
     }
 
@@ -517,6 +514,7 @@ html {
     }
 
     .event-text {
+        padding: 5px;
         width: 100%;
         color: blueviolet;
 
@@ -527,7 +525,7 @@ html {
     }
 
     .event-title {
-        font-size: 30px;
+        font-size: 22px;
         text-transform: uppercase;
         font-weight: 600;
 
@@ -539,7 +537,7 @@ html {
         margin: auto;
     }
 
-    .event-image {
+    /* .event-image {
         width: 250px;
         height: 400px;
     }
@@ -548,26 +546,34 @@ html {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
+    } */
 
-    .contact-list {
+    .contact {
+        align-self: center;
         width: 300px;
         padding: 25px;
-        border: 1px solid rgba(49, 45, 45, 0.5);
-        border-radius: 10px;
+        /* border: 1px solid rgba(49, 45, 45, 0.5); */
+        /* border-radius: 10px; */
     }
 
-    .contact-list p {
+    .custom-section {
         font-size: 12px;
-
+        width: 300px;
+        padding: 25px;
+        margin-bottom: 100px;
+        
     }
-
+    .custom-section button {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
     h5 {
         font-size: 15px;
     }
 
-    /* .badge{
-
+    /* .Academic{
+        
+        font-size: 13px;
     } */
     p {
         font-size: 12px;
