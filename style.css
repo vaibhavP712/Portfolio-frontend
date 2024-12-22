@@ -271,7 +271,6 @@ h4 {
 
 .custom-section input,
 .custom-section textarea {
-    /* margin: 40px; */
     padding: 10px;
     background-color: #888888;
     font-family: 'Poppins', sans-serif;
@@ -537,19 +536,24 @@ html {
     }
 
     .contact {
-        border: 1px solid rgba(186, 41, 41, 0.5);
-        border-radius: 10px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
     }
 
     .custom-section {
-        border: 1px solid rgba(186, 41, 41, 0.5);
-        border-radius: 10px;
         font-size: 12px;
+        width: 100%;
+    }
+    .custom-section form {
+        width: 70%;
     }
 
     .custom-section button {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 30% !important;
+        margin-right: 30% !important;
+        min-block-size: none;
+        
     }
 
     h5 {
