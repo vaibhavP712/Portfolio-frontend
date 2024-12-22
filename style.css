@@ -3,86 +3,6 @@
     background-color: rgba(0, 0, 21, 1);
 }
 
-/* Additional styling for comments container */
-.custom-section {
-    z-index: 10;
-    width: 100vh !important;
-    height: 20vw ;
-    margin: 20px;
-    /* background-color: aqua; */
-    
-}
-
-.custom-section form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px 0;
-}
-
-.custom-section input,
-.custom-section textarea {
-    padding: 10px;
-    background-color: #888888;
-    font-family: cursive;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-section button {
-    
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 10px;
-    padding: 8px 13px;
-    font-size: 1.2em;
-    background-color: #901f1f;
-    color: #fff;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.custom-section button:hover {
-    background-color: #242729;
-    transform: translateY(-2px);
-}
-
-#errorContainer {
-    color: red;
-    display: none;
-    margin-top: 10px;
-}
-
-#successContainer {
-    color: green;
-    display: none;
-    margin-top: 10px;
-}
-
-#loader {
-    display: none;
-    margin-top: 10px;
-}
-
-/* Comments Section */
-#commentsSection {
-    margin-top: 0px;
-
-}
-
-#commentsList li {
-    padding: 15px;
-    color: #fff;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border-bottom: 1px solid #3988af;
-    background: transparent;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* Footer Styling */
 footer {
@@ -304,7 +224,7 @@ h4 {
     border: 1px solid black;
     border-radius: 10px;
     max-height: 500px;
-    ;
+    
 }
 
 .event-text {
@@ -318,20 +238,99 @@ h4 {
     font-weight: 600;
 }
 
-
 .event-text p {
     color: white;
+}
+.commentHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
-.contact-list {
-    margin-top: 15px !important;
-    color: white;
+.custom-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 67%;
+}
+.custom-section form {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 100%;
+}
+
+.custom-section input,
+.custom-section textarea {
+    /* margin: 40px; */
+    padding: 10px;
+    background-color: #888888;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-section button {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    padding: 8px 13px;
+    font-size: 1.2em;
+    background-color: #901f1f;
+    color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-section button:hover {
+    background-color: #242729;
+    transform: translateY(-2px);
+}
+
+#errorContainer {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+#successContainer {
+    color: green;
+    display: none;
+    margin-top: 10px;
+}
+
+#loader {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Comments Section */
+#commentsSection {
+    margin-top: 0px;
+
+}
+
+#commentsList li {
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-bottom: 1px solid #3988af;
+    background: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h5 {
@@ -514,7 +513,7 @@ html {
     }
 
     .event-text {
-        padding: 5px;
+        padding: 25px;
         width: 100%;
         color: blueviolet;
 
@@ -537,44 +536,26 @@ html {
         margin: auto;
     }
 
-    /* .event-image {
-        width: 250px;
-        height: 400px;
-    }
-
-    .event-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
-
     .contact {
-        align-self: center;
-        width: 300px;
-        padding: 25px;
-        /* border: 1px solid rgba(49, 45, 45, 0.5); */
-        /* border-radius: 10px; */
+        border: 1px solid rgba(186, 41, 41, 0.5);
+        border-radius: 10px;
     }
 
     .custom-section {
+        border: 1px solid rgba(186, 41, 41, 0.5);
+        border-radius: 10px;
         font-size: 12px;
-        width: 300px;
-        padding: 25px;
-        margin-bottom: 100px;
-        
     }
+
     .custom-section button {
         margin-left: 100px;
         margin-right: 100px;
     }
+
     h5 {
         font-size: 15px;
     }
 
-    /* .Academic{
-        
-        font-size: 13px;
-    } */
     p {
         font-size: 12px;
     }
